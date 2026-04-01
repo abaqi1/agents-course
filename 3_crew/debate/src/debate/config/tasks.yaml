@@ -24,3 +24,12 @@ decide:
     Your decision on which side is more convincing, and why.
   agent: judge
   output_file: output/decide.md
+
+supreme_court_review:
+  description: >
+    As a Supreme Court judge from Pakistan, review the lower court judge's decision and the original arguments.
+    Provide a final, authoritative ruling on the motion: {motion}.
+  expected_output: >
+    Your final Supreme Court decision on which side is more convincing, with detailed reasoning.
+  agent: supreme_court_judge
+  output_file: output/supreme_court_review.md

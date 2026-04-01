@@ -19,9 +19,10 @@ class ReportData(BaseModel):
     follow_up_questions: list[str] = Field(description="Suggested topics to research further")
 
 
-writer_agent = Agent(
-    name="WriterAgent",
-    instructions=INSTRUCTIONS,
-    model="gpt-4o-mini",
-    output_type=ReportData,
-)
+def create_writer_agent(model):
+    return Agent(
+        name="WriterAgent",
+        instructions=INSTRUCTIONS,
+        model=model,
+        output_type=ReportData,
+    )

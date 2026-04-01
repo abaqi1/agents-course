@@ -79,26 +79,19 @@ class StockPicker():
     def crew(self) -> Crew:
         """Creates the StockPicker crew"""
 
+        # Manager is using a better model than the agents, so it can delegate tasks to the agents.
         manager = Agent(
             config=self.agents_config['manager'],
             allow_delegation=True
         )
-            
-        return Crew(
-            agents=self.agents,
-            tasks=self.tasks, 
-            process=Process.hierarchical,
-            verbose=True,
-            manager_agent=manager,
-            memory=True,
-            # Long-term memory for persistent storage across sessions
-            long_term_memory = LongTermMemory(
+        # Long-term memory for persistent storage across sessions
+        long_term_memory = LongTermMemory(
                 storage=LTMSQLiteStorage(
                     db_path="./memory/long_term_memory_storage.db"
                 )
             ),
-            # Short-term memory for current context using RAG
-            short_term_memory = ShortTermMemory(
+        # Short-term memory for current context using RAG
+        short_term_memory = ShortTermMemory(
                 storage = RAGStorage(
                         embedder_config={
                             "provider": "openai",
@@ -109,17 +102,30 @@ class StockPicker():
                         type="short_term",
                         path="./memory/"
                     )
-                ),            # Entity memory for tracking key information about entities
-            entity_memory = EntityMemory(
-                storage=RAGStorage(
-                    embedder_config={
-                        "provider": "openai",
-                        "config": {
-                            "model": 'text-embedding-3-small'
-                        }
-                    },
-                    type="short_term",
-                    path="./memory/"
-                )
-            ),
+                ),    
+        # Entity memory for tracking key information about entities
+        entity_memory = EntityMemory(
+            storage=RAGStorage(
+                embedder_config={
+                    "provider": "openai",
+                    "config": {
+                        "model": 'text-embedding-3-small'
+                    }
+                },
+                type="short_term",
+                path="./memory/"
+            )
+        ),
+
+
+        return Crew(
+            agents=self.agents,
+            tasks=self.tasks, 
+            process=Process.hierarchical,
+            verbose=True,
+            manager_agent=manager,
+            memory=True,
+            long_term_memory=long_term_memory,
+            short_term_memory=short_term_memory,
+            entity_memory=entity_memory,    
         )

@@ -1,2 +1,78 @@
-My name is Ed Donner. I'm an entrepreneur, software engineer and data scientist. I'm originally from London, England, but I moved to NYC in 2000.
-I love all foods, particularly French food, but strangely I'm repelled by almost all forms of cheese. I'm not allergic, I just hate the taste! I make an exception for cream cheese and mozarella though - cheesecake and pizza are the greatest.
+My name is Araiz Baqi. I'm a Senior Software Engineer with 8 years of experience in the industry, currently working at Bloomberg LP since August 2022. I've had a Test Automation focus throughout my career, with an emphasis On AI and ML tools usage, which I've been really pushing forward, especially in my current role.
+
+## Current Role - Bloomberg LP (August 2022 - Present)
+
+I'm a Senior Software Engineer in the Automation Frameworks team within Bloomberg's Asset and Investment Manager (AIM) department. I've built large-scale automation frameworks, CI/CD pipelines, observability systems, and LLM-powered intelligent tooling used across 60+ engineering teams in Bloomberg's Buyside (Asset & Investment Management) platform. I lead development across frontend, backend, automation, and AI tooling, and drive adoption of next-generation testing, triage, and environment provisioning tools across the org through technical leadership, demos, documentation, and cross-team strategy alignment while pushing software testing to the left in the SDLC.
+
+### Major Projects:
+
+**Text2BDD - Agentic Test Case Generator + BDD Search**: I architected an end-to-end agentic application for test writing and healing of BDD repositories (Behave, Cucumber). The system embeds all steps, scenarios, and examples into vector databases to enable semantic search for step/scenario discovery. I built scenario-generation agents that synthesize new BDD test cases using repository embeddings and RAG pipelines, empowering 60+ teams to expand automation coverage without manually writing new steps. I have also exposed these three Text2BDD tools (Step Search, Scenario Search, Scenario Generator) under an MCP server, so engineers can access and use them directly in conversations with their agents, instead of relying solely on the Web UI.
+
+**ONCL Buddy - LLM-Powered Failure Analysis for On-Call Triage**: I built a retrieval-augmented system that queries LIGO historical test results and fetches logs of the current run. The system delivers intelligent failure classification and root-cause assessment to ONCL engineers to reduce triage time, using RAG, embeddings, prompt engineering, and multi-agent evaluation.
+
+**Centralized Automation Frameworks - UI + Backend**: I helped build and maintain AIM's centralized automation frameworks for both front-end (Terminal UI) and back-end service testing. I implemented DevOps with Jenkins Pipeline feeding to Kafka Queues for Test Observability, Monitoring and Alarming. I created shared step repositories used by 60+ engineering teams, enabling consistent, scalable BDD automation across AIM.
+
+**LIGO - Test Observability Platform**: I contributed to full-stack development of Bloomberg's enterprise test observability tool. I built frontend components using React, Next.js, and Redux; developed Python middleware; and implemented backend integrations with Bloomberg's proprietary database system. This enables engineers across AIM/TOMS to visualize execution history, logs, metrics, flaky trends, and system-level test behavior.
+
+**PXC - Environment Provisioning System**: I developed components of Bloomberg's environment provisioning system used to mimic production-like application-service environments for testing and deployment simulations. I automated provisioning flows and integrated with internal infra services to reduce manual build/setup cycles.
+
+**Terminal-UI-Tools (MCP Server) - Bloomberg Terminal UI Agent Integration**: I built Terminal-UI-Tools, an MCP server bundled with our centralized Terminal UI automation framework used by 50+ engineering teams, standardizing agent-to-UI control across the org. I exposed Bloomberg Terminal UI actions as MCP tools (open screen + get/set/click/scroll) in TypeScript on top of Bloomberg's Selenium implementation, enabling Copilot / Claude Code to drive the Terminal directly for test authoring and debugging. This cut time-to-write new UI tests and time-to-debug failing tests by letting engineers describe the desired Terminal behavior in natural language and have the agent execute UI operations end-to-end (from navigation to assertion setup).
+
+I've presented major tools (LIGO, ONCL Assistant, Text2BDD) across AIM, (BuySide) TOMS (SellSide), and PORT (Risk Platform) to drive org-wide adoption. I write technical specifications, test strategies, automation roadmaps, and design docs, and partner with QA leads, PMs, and senior architects to shape testing strategy across the product.
+
+**Technologies**: Python, TypeScript, Cucumber and Behave Testing frameworks, OpenAI APIs, LangChain, HuggingFace embedding models, FAISS vector databases, React, Next.js, Redux, and various RAG techniques.
+
+## Previous Experience - Dell (October 2017 - August 2022)
+
+I worked as a Software Developer in Test and SDET at Dell in Austin, Texas. During my nearly 5 years there, I built a patented log analysis tool for test failure remediation (US Patent US11513927B1: https://patents.google.com/patent/US11513927B1/en), leveraging embeddings of past test failures and KNN search. This tool retrieved logs for failed test cases, embedded them, and created a model each week. The model was then used to run against new failures to detect anomalies - identifying if failures were significantly different from historical patterns or if similar issues had been found earlier, helping detect anomalies in failures. The patent covers a method and system for performing testing operations using ensemble anomaly detection models to identify anomalous subsequences in test logs and determine next best test cases. I was also a co-inventor on a second patent (US Patent US11934302B2: https://patents.google.com/patent/US11934302B2), which covers a machine learning method to rediscover failure scenarios by comparing customer server incident logs with internal test case logs.
+
+I automated functional test cases with Python, Java, JavaScript, and CLI tools. I implemented Selenium-based GUI testing frameworks and Appium mobile testing suites for Android. I created Python-based dashboards using Pandas, NumPy, Matplotlib, and Plotly to visualize test results and defect trends. I worked across the full Agile cycle from requirements to test strategy to automation to demo to signoff, translating business requirements into test scenarios and automated test collateral in parallel to feature development. I also materialized a simulation-based framework using Appium for Android Mobile testing.
+
+**Technologies**: Selenium, Docker, Jenkins, Appium, Python, Java, JavaScript.
+
+## Education
+
+I graduated from the University of Rhode Island in 2017 with a Bachelor of Science in Computer Science, with double minors in Cyber Security and Mathematics. During my time there (2013-2017), I held several positions including Software Validation Intern at Dell, Lab Manager for the Computer Science Department, Teaching Assistant, Information Technology Consultant, and Front-End Web Development Internship.
+
+## Technical Skills & AI/ML Expertise
+
+**Programming Languages**: Python (primary), TypeScript, Java, JavaScript
+
+**AI/ML Technologies**: 
+- **Generative AI Models, Tools, APIs**: OpenAI, DeepSeek, Claude, Gemini, Ollama, Copilot, Cursor, Claude Code
+- **Frameworks**: Full LangChain ecosystem (LangChain, LangGraph, LangSmith), OpenAI SDK, CrewAI, HuggingFace libraries, NumPy, Pandas, PyTorch
+- **MCP & RAG Pipelines**: MCP Servers, embeddings, context engineering with SQL DBs and Cloud Storage, retrieval pipelines using vector DBs and semantic search, agent short/long term memory and caching
+- **Vector Databases**: FAISS, Chroma, Solr
+- **Other**: Fine-tuning open source models with LoRA/QLoRA, prompt engineering, multi-agent systems
+
+**Test Automation**: Front/Backend testing frameworks, DevOps, Monitoring, Observability and Alarming, LLM Evaluation testing and Optimization
+
+**Web Technologies**: React, Next.js, Redux
+
+**Other Technologies**: Selenium, Docker, Jenkins, Appium, Pandas, NumPy, Matplotlib, Plotly
+
+## Career Goals
+
+I want to see new Software Engineering roles, and push for the latest software development and testing practices in any org i join. I am well versed with LLM Engineering, and agentic AI. I'm passionate about pushing the boundaries of what's possible with AI-powered automation and developer tooling.
+
+## Work Philosophy & Testing Approach
+
+My philosophy on testing and quality centers on Behavior-Driven Development (BDD) and shifting testing to the left of the SDLC. Rather than having QA teams do all the testing after development is complete, I believe in embedding quality practices throughout the entire software development lifecycle. This means developers write tests alongside code, using BDD frameworks to ensure requirements are clearly understood and testable from the start. By shifting testing left, we catch issues earlier, reduce rework, improve collaboration between developers and QA, and ultimately deliver higher quality software faster. This philosophy drives my work in building automation frameworks and tools that enable teams to adopt these practices at scale.
+
+## Achievements & Recognition
+
+**US Patent US11513927B1** - Method and System for Performing Testing Operations for Information Handling Systems (Granted November 2022). I was a co-inventor on this patent for an innovative log analysis system that uses ensemble machine learning models to detect anomalies in test execution logs. The system applies multiple prediction models to identify anomalous subsequences and automatically determines next best test cases, significantly improving test failure analysis and remediation efficiency. Patent link: https://patents.google.com/patent/US11513927B1/
+
+**US Patent US11934302B2** - Machine Learning Method to Rediscover Failure Scenario by Comparing Customer's Server Incident Logs with Internal Test Case Logs (Granted March 2024). I was a co-inventor on this patent for a method that matches customer server incident logs (e.g., lifecycle controller logs) to internal test-case logs in a knowledge base. The pipeline uses Sequence Graph Transformation (SGT) to encode message-code sequences and capture short- and long-term dependencies between codes, classifies message codes into Critical, Warning, and Informational categories, applies PCA for dimensionality reduction, and then uses cosine similarity with category-weighted scoring to find the best-matching internal test case. The system recommends the corresponding solution and steps to reproduce the failure, enabling support engineers to resolve field issues faster. Patent link: https://patents.google.com/patent/US11934302B2
+
+## Job Preferences
+
+I am open to any sort of software engineering roles in fintech and outside fintech. I am primarily looking for full-time or hybrid work opportunities in Chicago. Remote opportunities are also welcome, but since I am moving to Chicago, I am looking for jobs that only require physical presence in Chicago.
+
+I have been actively searching for new opportunities since January 2026.
+
+**Immigration Status**: I am a permanent resident of the US (Green Card Holder) and do NOT require immigration sponsorship from any future employer.
+
+## Personal
+
+I'm originally from Islamabad, Pakistan, and have been in the US since 2013 when I came for college. I love food, staying fit, playing football (big fan of AC Milan), participating in obstacle cource races, and doing yoga. Oh and I love cats.

@@ -1,0 +1,32 @@
+Create a professional technical infographic about CrewAI multi-agent AI orchestration framework. Modern, clean design with blue (#0066FF), purple (#6B46C1), and green (#10B981) color scheme. Vertical layout.
+
+Include these sections:
+
+1. HEADER: Large title "CrewAI Framework: Multi-Agent AI Orchestration" with subtitle "Build autonomous AI teams that collaborate"
+
+2. CORE COMPONENTS (top section):
+   - AGENTS: Show one agent card/box broken down into construct components: Role, Goal, Backstory, LLM, Tools, Memory - labeled as "Agent Construct: Autonomous AI units with defined purpose and capabilities"
+   - TASKS: Show one task box broken down into construct components: Description, Expected Output, Agent Assignment, Context, Output Format - with input/output arrows showing "Task Construct: Specific assignments with clear inputs and outputs"
+   - Show context flow: Task 1 output → Task 2 context → Task 3 context (demonstrating how tasks pass data)
+   - CREWS: Large container box holding agents and tasks together, labeled "Crew: Orchestrated teams of agents and tasks"
+
+3. PROCESS TYPES (middle left):
+   - SEQUENTIAL: Horizontal linear flow diagram (→ → →) with label "Sequential: Tasks execute in order"
+   - HIERARCHICAL: Tree structure with Manager at top, worker agents below, labeled "Hierarchical: Manager delegates tasks"
+
+4. ADVANCED FEATURES (middle right):
+   - TOOLS: Icon of wrench/toolbox with text "Extend capabilities (APIs, web search, custom)"
+   - MEMORY: Four connected boxes showing Short-Term (RAG), Long-Term (SQLite), Entity, User Memory
+   - CODE EXECUTION: Code block inside Docker container icon
+   - STRUCTURED OUTPUTS: JSON schema diagram with validation checkmark
+
+5. EXAMPLE WORKFLOW (center):
+   - Left: Research Crew (hierarchical) - Manager at top, 3 agents below with delegation arrows
+   - Right: Engineering Crew (sequential) - 4 agents in linear flow
+   - Arrow connecting the two crews showing data flow
+
+6. TECH STACK (bottom left): Icons for Python, Docker, Pydantic, YAML, LiteLLM, Gradio
+
+7. BENEFITS (bottom right): Checklist with checkmarks: Fast development, Multi-model support, Built-in memory, Code execution, Production-ready
+
+Style: Technical illustration, minimalist, flat design icons, consistent typography, subtle shadows on cards, connecting arrows between elements, professional educational poster style suitable for documentation or presentation.

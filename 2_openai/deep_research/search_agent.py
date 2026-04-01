@@ -8,10 +8,11 @@ INSTRUCTIONS = (
     "essence and ignore any fluff. Do not include any additional commentary other than the summary itself."
 )
 
-search_agent = Agent(
-    name="Search agent",
-    instructions=INSTRUCTIONS,
-    tools=[WebSearchTool(search_context_size="low")],
-    model="gpt-4o-mini",
-    model_settings=ModelSettings(tool_choice="required"),
-)
+def create_search_agent(model):
+    return Agent(
+        name="Search agent",
+        instructions=INSTRUCTIONS,
+        tools=[WebSearchTool(search_context_size="low")],
+        model=model,
+        model_settings=ModelSettings(tool_choice="required"),
+    )

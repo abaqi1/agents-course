@@ -1,0 +1,70 @@
+Create a professional technical infographic about CrewAI multi-agent AI orchestration framework. 
+
+VISUAL STYLE:
+- Modern tech design with blue (#0066FF), purple (#6B46C1), green (#10B981) color scheme
+- Clean, minimalist technical illustration style
+- Vertical layout suitable for documentation
+- Professional typography with clear hierarchy
+
+CORE CONTENT TO VISUALIZE:
+
+1. HEADER: "CrewAI Framework: Multi-Agent AI Orchestration" with subtitle "Build autonomous AI teams that collaborate to solve complex problems"
+
+2. AGENTS CONSTRUCT (Left Section):
+   - Show an agent card/box broken down into labeled components:
+     * Role (what the agent does)
+     * Goal (what it aims to achieve)
+     * Backstory (context and expertise)
+     * LLM (language model powering it)
+     * Tools (external capabilities - APIs, search, custom functions)
+     * Memory (context retention enabled/disabled)
+   - Visual: Agent card with components arranged around a central LLM brain icon
+   - Text: "Autonomous AI units - specialized workers with defined purpose"
+
+3. TASKS CONSTRUCT (Center Section):
+   - Show a task box broken down into labeled components:
+     * Description (what needs to be accomplished)
+     * Expected Output (what it should produce)
+     * Agent Assignment (which agent performs it)
+     * Context (references to other tasks for data flow)
+     * Output Format (Structured Pydantic or unstructured text)
+   - Visual: Task box with input arrow (context) and output arrow (result)
+   - Show connection: Task 1 → Task 2 → Task 3 demonstrating context passing
+   - Text: "Specific assignments with clear inputs and outputs"
+
+4. CREWS CONSTRUCT (Right Section):
+   - Visual: Large container box holding multiple agent cards and task boxes
+   - Text: "Orchestrated teams of agents and tasks working together"
+   - Show process indicators: Sequential (linear flow) vs Hierarchical (tree structure)
+
+5. PROCESS TYPES (Below Core Components):
+   - Sequential Process: Horizontal flow diagram with linear arrows → → →
+   - Hierarchical Process: Tree structure with manager at top, workers below
+
+6. ADVANCED FEATURES (Bottom Section):
+   - Tools: Icons connected to agents (web search, APIs, custom functions)
+   - Memory Systems: Four types (Short-Term RAG, Long-Term SQLite, Entity Memory, User Memory)
+   - Code Execution: Code block inside Docker container with safety shield
+   - Structured Outputs: Pydantic model schema diagram with validation checkmark
+
+7. EXAMPLE WORKFLOW (Center Bottom):
+   - Research Crew (Hierarchical): Manager → Crypto Finder → Researcher → Picker
+   - Engineering Crew (Sequential): Lead → Backend → Frontend → Test
+   - Show connections and data flow between crews
+
+8. TECHNOLOGY STACK (Bottom Left):
+   - Icons: Python, Docker, Pydantic, YAML, LiteLLM, Gradio
+
+9. KEY BENEFITS (Bottom Right):
+   - Checklist: Fast development, Multi-model support, Built-in memory, Clean patterns, Production-ready
+
+VISUAL REQUIREMENTS:
+- Use connecting lines/arrows to show relationships
+- Color-code: agents (blue), tasks (purple), tools (green)
+- Consistent spacing and alignment
+- Rounded rectangles for agent cards, rectangular boxes for tasks
+- Different arrow styles: solid (sequential), dashed (hierarchical)
+- Subtle gradients and shadows for depth
+- Icons should be flat, modern, minimal style
+
+LAYOUT: Vertical scroll-friendly with clear visual hierarchy and sections

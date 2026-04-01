@@ -24,6 +24,13 @@ class Debate():
             verbose=True
         )
 
+    @agent
+    def supreme_court_judge(self) -> Agent:
+        return Agent(
+            config=self.agents_config['supreme_court_judge'],
+            verbose=True
+        )
+
     @task
     def propose(self) -> Task:
         return Task(
@@ -42,6 +49,11 @@ class Debate():
             config=self.tasks_config['decide'],
         )
 
+    @task
+    def supreme_court_review(self) -> Task:
+        return Task(
+            config=self.tasks_config['supreme_court_review'],
+        )
 
     @crew
     def crew(self) -> Crew:
